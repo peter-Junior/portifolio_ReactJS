@@ -1,0 +1,42 @@
+.skill {
+    background: rgba(1, 9, 28, 0.75);
+    border-radius: 50px;
+    margin: 100px;
+    padding: 25px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0.75, 0.05));
+}
+
+@media (max-width: 800px) {
+    .skill {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.skill img {
+    height: 140px;
+    margin: 3%;
+    transition: all ease-in-out 200ms;
+    transform: scale(1);
+    filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.705));
+}
+
+@media (max-width: 450px) {
+    .skill img {
+        height: 100px;
+    }
+}
+
+.skill img:hover {
+    cursor: pointer;
+    transition: all ease-in-out 400ms;
+    transform: scale(1.1);
+}
+
+.skill h1 {
+    font-size: 45px;
+}
+
+.skill p {
+    font-size: 20px;
+}

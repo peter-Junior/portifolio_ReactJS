@@ -1,0 +1,15 @@
+.projects {
+    text-align: justify;
+    margin: 100px;
+}
+
+@media (max-width: 800px) {
+    .projects {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+h1 {
+    font-size: 45px;
+}
