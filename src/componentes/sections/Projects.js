@@ -31,9 +31,19 @@ function Projects() {
                 repo='https://github.com/peter-Junior/LoginDNC'
             />
 
+            <hr/>            
+            
+            <Card
+                site={'https://landin-page-escola-dnc.vercel.app/'} 
+                img={LPEscolaDNC} 
+                title={'Landin Page Escola DNC'} 
+                tech={'HTML, CSS, JavaScript'}
+                descrip={'Neste projeto, fui instruido pela escola à simular o que seria uma possível Landing Page de captura. Iniciei o projeto apenas com um forms ligado a uma API do Sheet Monkey. Atualizei o projeto com uma validação de formulário e um modal que indica que o processo foi finalizado.'}
+                repo='https://github.com/peter-Junior/landinPage-EscolaDNC'
+            />
+
             <hr/>
-            
-            
+
             <Card
                 site={'https://landin-page-escola-dnc.vercel.app/'} 
                 img={LPEscolaDNC} 
