@@ -3,6 +3,8 @@ import Card from '../elements/Card'
 import LoginDNC from '../images/projects/LoginDNC.png'
 import LPArquitDNC from '../images/projects/LPArquitDNC.png'
 import LPEscolaDNC from '../images/projects/LPEscolaDNC.png'
+import ButtonA from '../elements/ButtonA'
+import resumeJunior from '../images/projects/resumeJunior.pdf'
 
 function Projects() {
     return (
@@ -20,7 +22,7 @@ function Projects() {
                 repo='https://github.com/peter-Junior/Landing-Page-Arquitetura'                
             />
 
-            <hr/>
+            
 
             <Card
                 site={'https://login-lp-dnc.vercel.app/'} 
@@ -31,7 +33,7 @@ function Projects() {
                 repo='https://github.com/peter-Junior/LoginDNC'
             />
 
-            <hr/>            
+                       
             
             <Card
                 site={'https://landin-page-escola-dnc.vercel.app/'} 
@@ -42,7 +44,7 @@ function Projects() {
                 repo='https://github.com/peter-Junior/landinPage-EscolaDNC'
             />
 
-            <hr/>
+            
 
             <Card
                 site={'https://landin-page-escola-dnc.vercel.app/'} 
@@ -51,7 +53,18 @@ function Projects() {
                 tech={'HTML, CSS, JavaScript'}
                 descrip={'Neste projeto, fui instruido pela escola à simular o que seria uma possível Landing Page de captura. Iniciei o projeto apenas com um forms ligado a uma API do Sheet Monkey. Atualizei o projeto com uma validação de formulário e um modal que indica que o processo foi finalizado.'}
                 repo='https://github.com/peter-Junior/landinPage-EscolaDNC'
-            />
+            />            
+
+            
+            <div className={styles.lastTitle}>
+                <h1>Obrigado por ter vindo até aqui!</h1>
+                <h3>Se gostou das habilidades e dos projetos apresentados aqui,</h3>
+                <p>Não saia sem dar uma olhada no meu curriculo clicando no botão abaixo.</p>
+                <ButtonA text="Ver curriculum" link={resumeJunior}/>
+                <br/>
+                <br/>
+            </div>
+
 
             <hr/>
             

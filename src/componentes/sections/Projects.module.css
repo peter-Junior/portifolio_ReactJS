@@ -13,3 +13,17 @@
 h1 {
     font-size: 45px;
 }
+
+.lastTitle {
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 446px) {
+    .lastTitle {
+        margin-top: 70px;
+    }
+    .lastTitle h1 {
+        font-size: 30px;
+    }
+}

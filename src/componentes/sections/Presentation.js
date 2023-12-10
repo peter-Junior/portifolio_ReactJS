@@ -18,7 +18,7 @@ function Presentation() {
                         Sou estudante de tecnologia na FATEC Baixada Santista - Rubens Lara
                         e atualmente atuo no ramo de Comércio Exterior como Husbandry Agent
                         na empresa Wilhelmsen Shipping Company. Decidi pelo campo da tecnologia pois usei
-                        meu grande interesse pela área e juntei com o fato de ser uma ramo de atuação
+                        meu grande interesse pela área e juntei com o fato de ser um ramo de atuação
                         que já tem se consolidado como promissor há um bom tempo.
                         Gosto da ideia de solucionar problemas do cotidiano humano com a
                         utilização da tecnologia, ainda mais quando posso ajudar pessoas
