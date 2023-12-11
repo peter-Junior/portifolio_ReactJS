@@ -6,13 +6,46 @@ import photo3 from '../images/profile/photo3.png'
 import photo4 from '../images/profile/photo4.png'
 import resumeJunior from '../images/projects/resumeJunior.pdf'
 
+import { useEffect, useState } from 'react'
+
 function Presentation() {
+
+    const [text, setText] = useState('');
+    const toRotate = ['Pedro Junior!    ', 'Dev. Front-End    ', 'esforçado buscando um espaço    '];
+    const [loop, setLoop] = useState(0);
+    const [isDeleting, setIsDeleting] = useState(false);
+    const period = 50;
+    const [delta, setDelta] = useState(50);
+
+    useEffect(() => {
+        let clock = setInterval(() => {
+            toType()
+        }, delta)
+        return() => {clearInterval(clock)}
+    }, [text]);
+
+    const toType = () => {
+        let i = loop % toRotate.length;
+        let fullText = toRotate[i];
+        let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
+
+        setText(updatedText);
+
+        if (!isDeleting && updatedText === fullText) {
+            setIsDeleting(true);
+            setDelta(period);
+        } else if (isDeleting && updatedText === '') {
+            setIsDeleting(false);
+            setDelta(period);
+            setLoop(loop + 1);
+        }
+    }
 
     return (
         <div className={styles.presentation} id="Presentation">
             <div id="intro">
                 <h4><strong>Você está no meu Portfolio</strong></h4>
-                <h1>Eu sou o Pedro Júnior</h1>
+                <h1 className={styles.intro}>Eu sou {text}</h1>
                 <div className={styles.introDescription}>
                     <p>
                         Sou estudante de tecnologia na FATEC Baixada Santista - Rubens Lara
